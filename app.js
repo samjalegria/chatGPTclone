@@ -1,4 +1,4 @@
-const API_KEY = ''
+const SECRET_KEY = ''
 const submitButton = document.querySelector('#submit')
 const outPutElement = document.querySelector('#output')
 const inputElement = document.querySelector('input')
@@ -15,7 +15,7 @@ async function getMessage() {
   const options = {
     method: 'POST',
     headers: {
-      'Authorization': `Bearer ${API_KEY}`,
+      'Authorization': `Bearer ${SECRET_KEY}`,
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
